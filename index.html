@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social media dashboard with theme switcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-inter min-h-screen" id="body">
+    <div class="absolute bg-veryPaleBlue h-60 w-full top-0 right-0 left-0 -z-10 light-top-bg rounded-b-xl"></div>
+
+    <!-- main container -->
+    <main class="mx-auto px-5 py-10 lg:max-w-7xl relative">
+  
+
+      <!-- header flex container -->
+      <div class="lg:flex items-center justify-between font-bold">
+        <div>
+          <h1 class="text-2xl pb-3 header-main">Social Media Dashboard</h1>
+          <p class="text-sm pb-6 md:text-base text-color">
+            Total Followers: 23,004
+          </p>
+        </div>
+        <hr class="bg-darkGrayishBlue lg:hidden"></hr>
+
+        <!-- toggle -->
+        <div class="flex justify-between pt-5 pb-10 lg:gap-4">
+           <label for="toggle" class="text-sm self-center theme-name text-color cursor-pointer"></label>
+           <div class="relative inline-block w-12 align-middle select-none transition duration-200 ease-in">
+            <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-5 h-5 m-0.5 
+            rounded-full bg-darkDesaturatedBlue appearance-none cursor-pointer"/>
+            <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full cursor-pointer"></label>
+          </div>
+        </div>
+  
+      </div>
+
+      <!-- large cards grid container -->
+      <div
+        class="grid justify-between grid-cols-1 gap-6 pb-12 md:grid-cols-2 lg:grid-cols-4"
+      >
+
+        <!-- facebook card -->
+        <div
+          class="card py-6 text-center border-t-8 border-facebook rounded cursor-pointer"
+        >
+          <div class="flex justify-center pb-7 space-x-2">
+            <img src="./images/icon-facebook.svg" alt="facebook icon" />
+            <a href="#" class="text-xs self-center text-color">@nethanf</a>
+          </div>
+          <p class="text-5xl font-bold pb-3 statistics-num">1987</p>
+          <p
+            class="text-sm md:text-base uppercase tracking-widest pb-6 text-color"
+          >
+            followers
+          </p>
+          <div class="flex justify-center space-x-2">
+            <img
+              src="./images/icon-up.svg"
+              alt=""
+              class="h-1 w-2 self-center"
+            />
+            <p class="text-limeGreen text-sm">12 Today</p>
+          </div>
+        </div>
+
+        <!-- twitter card -->
+        <div
+          class="card py-6 text-center border-t-8 border-facebook rounded cursor-pointer"
+        >
+          <div class="flex justify-center pb-7 space-x-2">
+            <img src="./images/icon-twitter.svg" alt="twitter icon" />
+            <a href="#" class="text-xs self-center text-color">@nethanf</a>
+          </div>
+          <p class="text-5xl font-bold pb-3 statistics-num">1044</p>
+          <p
+            class="text-sm md:text-base uppercase tracking-widest pb-6 text-color"
+          >
+            followers
+          </p>
+          <div class="flex justify-center space-x-2">
+            <img
+              src="./images/icon-up.svg"
+              alt=""
+              class="h-1 w-2 self-center"
+            />
+            <p class="text-limeGreen text-sm">99 Today</p>
+          </div>
+        </div>
+
+        <!-- insta card -->
+        <div class="card text-center rounded-b pb-6 cursor-pointer">
+          <div
+            class="bg-gradient-to-r from-instagramFrom to-instagramTo h-2 rounded-t mb-6"
+          ></div>
+          <div class="flex justify-center pb-7 space-x-2">
+            <img src="./images/icon-instagram.svg" alt="twitter icon" />
+            <a href="#" class="text-xs self-center text-color">@realnethanf</a>
+          </div>
+          <p class="text-5xl font-bold pb-3 statistics-num">11k</p>
+          <p
+            class="text-sm md:text-base uppercase tracking-widest pb-6 text-color"
+          >
+            followers
+          </p>
+          <div class="flex justify-center space-x-2">
+            <img
+              src="./images/icon-up.svg"
+              alt=""
+              class="h-1 w-2 self-center"
+            />
+            <p class="text-limeGreen text-sm">1099 Today</p>
+          </div>
+        </div>
+
+        <!-- youtube card -->
+        <div
+          class="card py-6 text-center border-t-8 border-youTube rounded cursor-pointer"
+        >
+          <div class="flex justify-center pb-7 space-x-2">
+            <img src="./images/icon-youtube.svg" alt="youtube icon" />
+            <a href="#" class="text-xs self-center text-color">Nathan F.</a>
+          </div>
+          <p class="text-5xl font-bold pb-3 statistics-num">8239</p>
+          <p
+            class="text-sm md:text-base uppercase tracking-widest pb-6 text-color"
+          >
+            followers
+          </p>
+          <div class="flex justify-center space-x-2">
+            <img
+              src="./images/icon-down.svg"
+              alt=""
+              class="h-1 w-2 self-center"
+            />
+            <p class="text-brightRed text-sm">144 Today</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview today -->
+      <h2 class="text-white text-2xl">Overview - Today</h2>
+
+       <!-- small cards grid container -->
+       <div class="pt-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- facebook views card -->
+        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+          <div class="flex justify-between">
+            <p class="text-sm text-color">Page Views</p>
+            <img src="./images/icon-facebook.svg" alt="" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl font-bold statistics-num">87</p>
+            <div class="flex space-x-1 self-center">
+              <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
+              <p class="text-limeGreen text-xs">3%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- facebook likes card -->
+        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+          <div class="flex justify-between">
+            <p class="text-sm text-color">Likes</p>
+            <img src="./images/icon-facebook.svg" alt="" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl font-bold statistics-num">52</p>
+            <div class="flex space-x-1 self-center">
+              <img src="./images/icon-down.svg" alt="" class="h-1 w-2 self-center">
+              <p class="text-brightRed text-xs">2%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Insta likes card -->
+        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+          <div class="flex justify-between">
+            <p class="text-sm text-color">Likes</p>
+            <img src="./images/icon-instagram.svg" alt="" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl font-bold statistics-num">5462</p>
+            <div class="flex space-x-1 self-center">
+              <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
+              <p class="text-limeGreen text-xs">2257%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Insta views card -->
+        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+          <div class="flex justify-between">
+            <p class="text-sm text-color">Profile Views</p>
+            <img src="./images/icon-instagram.svg" alt="" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl font-bold statistics-num">52k</p>
+            <div class="flex space-x-1 self-center">
+              <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
+              <p class="text-limeGreen text-xs">1375%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Twitter retweets card -->
+        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+          <div class="flex justify-between">
+            <p class="text-sm text-color">Retweets</p>
+            <img src="./images/icon-twitter.svg" alt="" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl font-bold statistics-num">117</p>
+            <div class="flex space-x-1 self-center">
+              <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
+              <p class="text-limeGreen text-xs">303%</p>
+            </div>
+          </div>
+        </div>
+
+         <!-- Twitter likes card -->
+        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+          <div class="flex justify-between">
+            <p class="text-sm text-color">Likes</p>
+            <img src="./images/icon-twitter.svg" alt="" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl font-bold statistics-num">507</p>
+            <div class="flex space-x-1 self-center">
+              <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
+              <p class="text-limeGreen text-xs">553%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube likes card -->
+        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+          <div class="flex justify-between">
+            <p class="text-sm text-color">Likes</p>
+            <img src="./images/icon-youtube.svg" alt="" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl font-bold statistics-num">107</p>
+            <div class="flex space-x-1 self-center">
+              <img src="./images/icon-down.svg" alt="" class="h-1 w-2 self-center">
+              <p class="text-brightRed text-xs">19%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube views card -->
+        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+          <div class="flex justify-between">
+            <p class="text-sm text-color">Total Views</p>
+            <img src="./images/icon-youtube.svg" alt="" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl font-bold statistics-num">1407</p>
+            <div class="flex space-x-1 self-center">
+              <img src="./images/icon-down.svg" alt="" class="h-1 w-2 self-center">
+              <p class="text-brightRed text-xs">12%</p>
+            </div>
+          </div>
+        </div>
+
+       </div>
+
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
