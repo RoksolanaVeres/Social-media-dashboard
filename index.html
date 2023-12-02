@@ -13,8 +13,8 @@
     />
   </head>
 
-  <body class="font-inter min-h-screen" id="body">
-    <div class="absolute bg-veryPaleBlue h-60 w-full top-0 right-0 left-0 -z-10 light-top-bg rounded-b-xl"></div>
+  <body class="font-inter min-h-screen dark:bg-veryDarkBlueBg" id="body">
+    <div class="dark:hidden absolute bg-veryPaleBlue h-60 w-full top-0 right-0 left-0 -z-10 light-top-bg rounded-b-xl"></div>
 
     <!-- main container -->
     <main class="mx-auto px-5 py-10 lg:max-w-7xl relative">
@@ -23,8 +23,8 @@
       <!-- header flex container -->
       <div class="lg:flex items-center justify-between font-bold">
         <div>
-          <h1 class="text-2xl pb-3 header-main">Social Media Dashboard</h1>
-          <p class="text-sm pb-6 md:text-base text-color">
+          <h1 class="dark:text-white text-2xl pb-3 header-main">Social Media Dashboard</h1>
+          <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm pb-6 md:text-base text-color">
             Total Followers: 23,004
           </p>
         </div>
@@ -32,11 +32,11 @@
 
         <!-- toggle -->
         <div class="flex justify-between pt-5 pb-10 lg:gap-4">
-           <label for="toggle" class="text-sm self-center theme-name text-color cursor-pointer"></label>
+           <label for="toggle" class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm self-center theme-name text-color cursor-pointer"></label>
            <div class="relative inline-block w-12 align-middle select-none transition duration-200 ease-in">
-            <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-5 h-5 m-0.5 
-            rounded-full bg-darkDesaturatedBlue appearance-none cursor-pointer"/>
-            <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full cursor-pointer"></label>
+            <input type="checkbox" name="toggle" id="toggle" class="right-0 bg-veryPaleBlue toggle-checkbox absolute block w-5 h-5 m-0.5 
+            rounded-full dark:bg-darkDesaturatedBlue dark:left-0 appearance-none cursor-pointer"/>
+            <label for="toggle" class="bg-gray-400 dark:bg-gradient-to-r dark:from-toggleFrom dark:to-toggleTo toggle-label block overflow-hidden h-6 rounded-full cursor-pointer"></label>
           </div>
         </div>
   
@@ -49,15 +49,16 @@
 
         <!-- facebook card -->
         <div
-          class="card py-6 text-center border-t-8 border-facebook rounded cursor-pointer"
+          class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover 
+          py-6 text-center border-t-8 border-facebook rounded cursor-pointer"
         >
           <div class="flex justify-center pb-7 space-x-2">
             <img src="./images/icon-facebook.svg" alt="facebook icon" />
-            <a href="#" class="text-xs self-center text-color">@nethanf</a>
+            <a href="#" class="text-darkGrayishBlue dark:text-desaturatedBlue text-xs self-center text-color">@nethanf</a>
           </div>
-          <p class="text-5xl font-bold pb-3 statistics-num">1987</p>
+          <p class="text-black, dark:text-white text-5xl font-bold pb-3 statistics-num">1987</p>
           <p
-            class="text-sm md:text-base uppercase tracking-widest pb-6 text-color"
+            class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm md:text-base uppercase tracking-widest pb-6 text-color"
           >
             followers
           </p>
@@ -73,15 +74,16 @@
 
         <!-- twitter card -->
         <div
-          class="card py-6 text-center border-t-8 border-facebook rounded cursor-pointer"
+          class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+          py-6 text-center border-t-8 border-facebook rounded cursor-pointer"
         >
           <div class="flex justify-center pb-7 space-x-2">
             <img src="./images/icon-twitter.svg" alt="twitter icon" />
-            <a href="#" class="text-xs self-center text-color">@nethanf</a>
+            <a href="#" class="text-darkGrayishBlue dark:text-desaturatedBlue text-xs self-center text-color">@nethanf</a>
           </div>
-          <p class="text-5xl font-bold pb-3 statistics-num">1044</p>
+          <p class="text-black, dark:text-white text-5xl font-bold pb-3 statistics-num">1044</p>
           <p
-            class="text-sm md:text-base uppercase tracking-widest pb-6 text-color"
+            class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm md:text-base uppercase tracking-widest pb-6 text-color"
           >
             followers
           </p>
@@ -96,17 +98,18 @@
         </div>
 
         <!-- insta card -->
-        <div class="card text-center rounded-b pb-6 cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        text-center rounded-b pb-6 cursor-pointer">
           <div
             class="bg-gradient-to-r from-instagramFrom to-instagramTo h-2 rounded-t mb-6"
           ></div>
           <div class="flex justify-center pb-7 space-x-2">
             <img src="./images/icon-instagram.svg" alt="twitter icon" />
-            <a href="#" class="text-xs self-center text-color">@realnethanf</a>
+            <a href="#" class="text-darkGrayishBlue dark:text-desaturatedBlue text-xs self-center text-color">@realnethanf</a>
           </div>
-          <p class="text-5xl font-bold pb-3 statistics-num">11k</p>
+          <p class="text-black, dark:text-white text-5xl font-bold pb-3 statistics-num">11k</p>
           <p
-            class="text-sm md:text-base uppercase tracking-widest pb-6 text-color"
+            class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm md:text-base uppercase tracking-widest pb-6 text-color"
           >
             followers
           </p>
@@ -122,15 +125,16 @@
 
         <!-- youtube card -->
         <div
-          class="card py-6 text-center border-t-8 border-youTube rounded cursor-pointer"
+          class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+          py-6 text-center border-t-8 border-youTube rounded cursor-pointer"
         >
           <div class="flex justify-center pb-7 space-x-2">
             <img src="./images/icon-youtube.svg" alt="youtube icon" />
-            <a href="#" class="text-xs self-center text-color">Nathan F.</a>
+            <a href="#" class="text-darkGrayishBlue dark:text-desaturatedBlue text-xs self-center text-color">Nathan F.</a>
           </div>
-          <p class="text-5xl font-bold pb-3 statistics-num">8239</p>
+          <p class="text-black, dark:text-white text-5xl font-bold pb-3 statistics-num">8239</p>
           <p
-            class="text-sm md:text-base uppercase tracking-widest pb-6 text-color"
+            class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm md:text-base uppercase tracking-widest pb-6 text-color"
           >
             followers
           </p>
@@ -152,13 +156,14 @@
        <div class="pt-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
         <!-- facebook views card -->
-        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        grid gap-6 py-6 px-8 rounded cursor-pointer">
           <div class="flex justify-between">
-            <p class="text-sm text-color">Page Views</p>
+            <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm text-color">Page Views</p>
             <img src="./images/icon-facebook.svg" alt="" class="w-5 h-5">
           </div>
           <div class="flex justify-between">
-            <p class="text-3xl font-bold statistics-num">87</p>
+            <p class="text-black, dark:text-white text-3xl font-bold statistics-num">87</p>
             <div class="flex space-x-1 self-center">
               <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
               <p class="text-limeGreen text-xs">3%</p>
@@ -167,13 +172,14 @@
         </div>
 
         <!-- facebook likes card -->
-        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        grid gap-6 py-6 px-8 rounded cursor-pointer">
           <div class="flex justify-between">
-            <p class="text-sm text-color">Likes</p>
+            <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm text-color">Likes</p>
             <img src="./images/icon-facebook.svg" alt="" class="w-5 h-5">
           </div>
           <div class="flex justify-between">
-            <p class="text-3xl font-bold statistics-num">52</p>
+            <p class="text-black, dark:text-white text-3xl font-bold statistics-num">52</p>
             <div class="flex space-x-1 self-center">
               <img src="./images/icon-down.svg" alt="" class="h-1 w-2 self-center">
               <p class="text-brightRed text-xs">2%</p>
@@ -182,13 +188,14 @@
         </div>
 
         <!-- Insta likes card -->
-        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        grid gap-6 py-6 px-8 rounded cursor-pointer">
           <div class="flex justify-between">
-            <p class="text-sm text-color">Likes</p>
+            <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm text-color">Likes</p>
             <img src="./images/icon-instagram.svg" alt="" class="w-5 h-5">
           </div>
           <div class="flex justify-between">
-            <p class="text-3xl font-bold statistics-num">5462</p>
+            <p class="text-black, dark:text-white text-3xl font-bold statistics-num">5462</p>
             <div class="flex space-x-1 self-center">
               <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
               <p class="text-limeGreen text-xs">2257%</p>
@@ -197,13 +204,14 @@
         </div>
 
         <!-- Insta views card -->
-        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        grid gap-6 py-6 px-8 rounded cursor-pointer">
           <div class="flex justify-between">
-            <p class="text-sm text-color">Profile Views</p>
+            <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm text-color">Profile Views</p>
             <img src="./images/icon-instagram.svg" alt="" class="w-5 h-5">
           </div>
           <div class="flex justify-between">
-            <p class="text-3xl font-bold statistics-num">52k</p>
+            <p class="text-black, dark:text-white text-3xl font-bold statistics-num">52k</p>
             <div class="flex space-x-1 self-center">
               <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
               <p class="text-limeGreen text-xs">1375%</p>
@@ -212,13 +220,14 @@
         </div>
 
         <!-- Twitter retweets card -->
-        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        grid gap-6 py-6 px-8 rounded cursor-pointer">
           <div class="flex justify-between">
-            <p class="text-sm text-color">Retweets</p>
+            <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm text-color">Retweets</p>
             <img src="./images/icon-twitter.svg" alt="" class="w-5 h-5">
           </div>
           <div class="flex justify-between">
-            <p class="text-3xl font-bold statistics-num">117</p>
+            <p class="text-black, dark:text-white text-3xl font-bold statistics-num">117</p>
             <div class="flex space-x-1 self-center">
               <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
               <p class="text-limeGreen text-xs">303%</p>
@@ -227,13 +236,14 @@
         </div>
 
          <!-- Twitter likes card -->
-        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        grid gap-6 py-6 px-8 rounded cursor-pointer">
           <div class="flex justify-between">
-            <p class="text-sm text-color">Likes</p>
+            <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm text-color">Likes</p>
             <img src="./images/icon-twitter.svg" alt="" class="w-5 h-5">
           </div>
           <div class="flex justify-between">
-            <p class="text-3xl font-bold statistics-num">507</p>
+            <p class="text-black, dark:text-white text-3xl font-bold statistics-num">507</p>
             <div class="flex space-x-1 self-center">
               <img src="./images/icon-up.svg" alt="" class="h-1 w-2 self-center">
               <p class="text-limeGreen text-xs">553%</p>
@@ -242,13 +252,14 @@
         </div>
 
         <!-- YouTube likes card -->
-        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        grid gap-6 py-6 px-8 rounded cursor-pointer">
           <div class="flex justify-between">
-            <p class="text-sm text-color">Likes</p>
+            <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm text-color">Likes</p>
             <img src="./images/icon-youtube.svg" alt="" class="w-5 h-5">
           </div>
           <div class="flex justify-between">
-            <p class="text-3xl font-bold statistics-num">107</p>
+            <p class="text-black, dark:text-white text-3xl font-bold statistics-num">107</p>
             <div class="flex space-x-1 self-center">
               <img src="./images/icon-down.svg" alt="" class="h-1 w-2 self-center">
               <p class="text-brightRed text-xs">19%</p>
@@ -257,13 +268,14 @@
         </div>
 
         <!-- YouTube views card -->
-        <div class="card grid gap-6 py-6 px-8 rounded cursor-pointer">
+        <div class="card bg-lightGrayishBlue dark:bg-darkDesaturatedBlue hover:bg-lightCardHover dark:hover:bg-darkCardHover
+        grid gap-6 py-6 px-8 rounded cursor-pointer">
           <div class="flex justify-between">
-            <p class="text-sm text-color">Total Views</p>
+            <p class="text-darkGrayishBlue dark:text-desaturatedBlue text-sm text-color">Total Views</p>
             <img src="./images/icon-youtube.svg" alt="" class="w-5 h-5">
           </div>
           <div class="flex justify-between">
-            <p class="text-3xl font-bold statistics-num">1407</p>
+            <p class="text-black, dark:text-white text-3xl font-bold statistics-num">1407</p>
             <div class="flex space-x-1 self-center">
               <img src="./images/icon-down.svg" alt="" class="h-1 w-2 self-center">
               <p class="text-brightRed text-xs">12%</p>
