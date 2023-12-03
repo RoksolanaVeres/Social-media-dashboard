@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "FEM-social-media-dashboard",
+		"path": "."
+	},
+	{
+		"name": "images",
+		"path": "../social-media-dashboard-with-theme-switcher-master/images"
+	}
+],
+  "settings": {}
+}
