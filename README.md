@@ -6,7 +6,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -22,7 +22,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
-### Screenshot
+### Screenshots
 
 ![](./screenshots/dark_desktop.png)
 ![](./screenshots/dark_mobile.png)
@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/responsive-tip-calculator-app-Dgneqi3k7t)
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/social-media-dashboard-built-with-tailwind-ZQNzbvkGmD)
 - [GitHub repo](https://github.com/RoksolanaVeres/Social-media-dashboard)
 - [Live Site](https://social-media-dashboard-eight-ebon.vercel.app/)
 
